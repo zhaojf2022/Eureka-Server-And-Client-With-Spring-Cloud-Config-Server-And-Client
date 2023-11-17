@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="60658826-9365-46de-984a-912e2b50f965" name="sytest">
+        <fileTransfer rootFolder="/usr/local/demo/configdemo" accessType="SFTP" host="sytest" port="22" sshConfigId="e649e9d0-1efc-457e-9cff-02403f6eff68" sshConfig="root@sytest:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -13,7 +13,7 @@ public class EurekaServerApplication {
 
 		/*
 		 * 在项目启动目录中，生成一个 pid 文件用于优雅地停止服务:
-		 * 停止文件使用命令：‘cat  ***App.pid | xargs kill’
+		 * 停止文件使用命令：‘cat  EurekaServerApp.pid | xargs kill’
 		 */
 		SpringApplication application = new SpringApplication(EurekaServerApplication.class);
 		application.addListeners(new ApplicationPidFileWriter("EurekaServerApp.pid"));

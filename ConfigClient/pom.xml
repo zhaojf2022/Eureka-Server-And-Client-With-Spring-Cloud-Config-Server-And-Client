@@ -33,6 +33,13 @@
 	        <artifactId>spring-boot-starter-data-mongodb</artifactId>
 	    </dependency>
 
+		<!-- 用于支持SpringBoot Admin监控本项目 -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>3.1.6</version>
+		</dependency>
+
 		<dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-starter-actuator</artifactId>
