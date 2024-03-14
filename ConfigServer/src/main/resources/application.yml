@@ -1,0 +1,37 @@
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+server:
+    port: 9999
+spring:
+    application:
+        name: Spring-Config-Server
+    boot:
+        admin:
+            client:
+                instance:
+                    service-base-url: http://localhost:${server.port}
+                password: monitor
+                url: http://106.14.68.165:10450
+                username: admin
+    cloud:
+        config:
+            server:
+                git:
+                    basedir: /usr/local/demo/config-reposity
+                    clone-on-start: true
+                    default-label: main
+                    password: aliyun123
+                    uri: https://codeup.aliyun.com/64758e8db44b3d9a1d163161/demoproject/config-reposity.git
+                    username: zhaojfc2g
+    devtools:
+        livereload:
+            enabled: false
+    profiles:
+        active: git

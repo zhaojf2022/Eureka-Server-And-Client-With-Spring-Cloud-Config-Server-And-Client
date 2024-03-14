@@ -1,0 +1,18 @@
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+server:
+    port: 8761
+spring:
+    application:
+        name: Eureka-Server
+    boot:
+        admin:
+            client:
+                instance:
+                    service-base-url: http://106.14.68.165:${server.port}
+                password: monitor
+                url: http://106.14.68.165:10450
+                username: admin
